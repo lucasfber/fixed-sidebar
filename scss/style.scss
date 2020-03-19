@@ -1,0 +1,68 @@
+@import "resets/reset";
+@import "colors";
+
+.main {
+  display: flex;
+
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  //position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 20%;
+  min-width: 20%;
+  background-color: $primary-blue;
+  color: white;
+  min-height: 100vh;
+  max-height: 100%;
+
+  a {
+    color: #fff;
+    display: block;
+  }
+
+  &__header {
+    background-color: $secondary-blue;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__links {
+
+    li {
+      border-bottom: 1px solid $light-grey;
+      i {
+        margin-right: .5rem;
+      }
+
+      a {
+        padding: 1rem;
+        transition: .4s;
+
+        &:hover {
+          padding-left: 1.5rem;
+          background-color: $secondary-blue;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 1rem 2rem;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #444;
+  }
+}
+
