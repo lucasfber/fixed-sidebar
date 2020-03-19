@@ -38,7 +38,7 @@
 
       a {
         padding: 1rem;
-        transition: .4s;
+        transition: padding-left .4s ease;
 
         &:hover {
           background-color: $secondary-blue;
